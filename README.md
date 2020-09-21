@@ -33,9 +33,7 @@
    ```
 
 /**
-    ⚠️USERGE-X userbo kullanımından dolayı; Telegram hesabınız yasaklanabilir.⚠️          
-    Bu açık kaynaklı bir projedir, yaptığınız her işlemden (siz)kendiniz sorumlusunuz. Kesinlikle  yöneticiler sorumluluk kabul etmemektedir.
-    USERGE-X kullanarak bu sorumlulukları kabul etmiş sayılırsınız.
+    ⚠️ USERGE-X userbo istifadəsinə görə; Telgraf hesabınız blok ola bilər.Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
 /**
 ```
 
