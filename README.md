@@ -33,19 +33,19 @@
    ```
 
 /**
-    ⚠️ USERGE-X userbo istifadəsinə görə; Telgraf hesabınız blok ola bilər.Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
+    ⚠️ USERGE-X userbo istifadəsinə görə; Telegram hesabınız blok ola bilər.Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
 /**
 ```
 
 
-## Gereksinimler 
+## Lazım olanlar 
 
 * Python 3.8 veya üstü
-* Telegram [API Anahtarı](https://my.telegram.org/apps)
-* Google Drive [API Anahtarı](https://console.developers.google.com/)
-* MongoDB [Veritabanı URL](https://cloud.mongodb.com/)
+* Telegram [API məlumatları](https://my.telegram.org/apps)
+* Google Drive [API məlumatları](https://console.developers.google.com/)
+* MongoDB [Verilənlər bazası URL](https://cloud.mongodb.com/)
 
-## Nasıl Kurulur
+## Qurulum
 
 <p align="center">
 <a href = "https://heroku.com/deploy?templatehttps://github.com/DarkWebAze/darktest"><img src="https://telegra.ph/file/57c4edb389224c9cf9996.png" alt="Kullanım İçin Tıklayın" width="490px"></a></p>
