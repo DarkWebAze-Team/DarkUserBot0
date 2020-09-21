@@ -1,30 +1,30 @@
 #!/bin/bash
 #
-# Copyright (C) 2020 by UsergeTeam@Github, < https://github.com/UsergeTeam >.
+# Copyright (C) 2020 by DarkWebAze@Github, < https://github.com/DarkWebAze >.
 #
-# This file is part of < https://github.com/UsergeTeam/Userge > project,
+# This file is part of < https://github.com/DarkWebAze/DarkUserBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/uaudith/Userge/blob/master/LICENSE >
+# Please see < https://github.com/DarkWebAze/DarkUserBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
 _checkBashReq() {
-    log "Komutlar Kontrol Ediliyor ..."
-    command -v jq &> /dev/null || quit "Gerekli komut: jq : bulunamadı!"
+    log "Komandalara Yoxlanılır ..."
+    command -v jq &> /dev/null || quit "Lazımlı Komanda: jq : tapılmadı!"
 }
 
 _checkPythonVersion() {
-    log "Python Sürümü kontrol ediliyor ..."
+    log "Python Versiya Yoxlanılır ..."
     ( test -z $pVer || test $(sed 's/\.//g' <<< $pVer) -lt 380 ) \
         && quit "You MUST have a python version of at least 3.8.0 !"
     log "\tFound PYTHON - v$pVer ..."
 }
 
 _checkConfigFile() {
-    log "Yapılandırma Dosyası Kontrol Ediliyor ..."
+    log "Yapılandırma Faylı Yoxlanılır ..."
     configPath="config.env"
     if test -f $configPath; then
-        log "\tYapılandırma dosyası bulundu : $configPath, Aktarılıyor ..."
+        log "\tYapılandırma faylı tapıldı : $configPath, Yüklənir ..."
         set -a
         . $configPath
         set +a
@@ -34,7 +34,7 @@ _checkConfigFile() {
 }
 
 _checkRequiredVars() {
-    log "Gerekli ENV Dosyası Kontrol Ediliyor ..."
+    log "Lazımlı ENV Faylı Yoxlanılır ..."
     for var in API_ID API_HASH LOG_CHANNEL_ID DATABASE_URL; do
         test -z ${!var} && quit "Required $var var !"
     done
@@ -44,13 +44,13 @@ _checkRequiredVars() {
 }
 
 _checkDefaultVars() {
-    replyLastMessage "Varsayılan ENV dosyası Kontrol Ediliyor ..."
+    replyLastMessage "Var Olan ENV Faylı Yoxlanılır ..."
     declare -rA def_vals=(
         [WORKERS]=0
         [PREFERRED_LANGUAGE]="en"
         [DOWN_PATH]="downloads"
         [UPSTREAM_REMOTE]="upstream"
-        [UPSTREAM_REPO]="https://github.com/code-rgb/USERGE-X"
+        [UPSTREAM_REPO]="https://github.com/DarkWebAze/DarkUserBot"
         [LOAD_UNOFFICIAL_PLUGINS]=true
         [G_DRIVE_IS_TD]=true
         [CMD_TRIGGER]="."
@@ -87,7 +87,7 @@ print(quote_plus("'$uNameAndPass'"))')
 
 _checkDatabase() {
     editLastMessage ""
-    editLastMessage "DATABASE_URL kontrol ediliyor ...."
+    editLastMessage "DATABASE_URL yoxlanılır ...."
     editLastMessage "Checking DATABASE_URL ..."
     local mongoErr=$(runPythonCode '
 import pymongo
@@ -99,13 +99,13 @@ except Exception as e:
 }
 
 _checkTriggers() {
-    editLastMessage "KOMUTLAR kontrol ediliyor ..."
+    editLastMessage "KOMANDLAR yoxlanılır ..."
     test $CMD_TRIGGER = $SUDO_TRIGGER \
         && quit "Invalid SUDO_TRIGGER!, You can't use $CMD_TRIGGER as SUDO_TRIGGER"
 }
 
 _checkPaths() {
-    editLastMessage ""Dizinler Kontrol Ediliyor ...""
+    editLastMessage ""Qovluqlar yoxlanılır ...""
     for path in $DOWN_PATH logs bin; do
         test ! -d $path && {
             log "\tCreating Path : ${path%/} ..."
@@ -115,31 +115,31 @@ _checkPaths() {
 }
 
 _checkBins() {
-    editLastMessage "BINS kontrol ediliyor ..."
+    editLastMessage "BINS yoxlanılır ..."
     declare -rA bins=(
         [bin/megadown]="https://raw.githubusercontent.com/yshalsager/megadown/master/megadown"
         [bin/cmrudl]="https://raw.githubusercontent.com/yshalsager/cmrudl.py/master/cmrudl.py"
     )
     for bin in ${!bins[@]}; do
         test ! -f $bin && {
-            log "\tİndiriliyor $bin ..."
+            log "\tYüklenir $bin ..."
             curl -so $bin ${bins[$bin]}
         }
     done
 }
 
 _checkGit() {
-    editLastMessage "GIT kontrol ediliyor ..."
+    editLastMessage "GIT yoxlanılır ..."
     if test ! -d .git; then
         if test ! -z $HEROKU_GIT_URL; then
-            replyLastMessage "\tHeroku Git klonlanıyor "
+            replyLastMessage "\tHeroku Git klonlanır "
             gitClone $HEROKU_GIT_URL tmp_git || quit "Invalid HEROKU_API_KEY or HEROKU_APP_NAME var !"
             mv tmp_git/.git .
             rm -rf tmp_git
             editLastMessage "\tChecking Heroku Remote ..."
             remoteIsExist heroku || addHeroku
         else
-            replyLastMessage "\tBoş Git Başlatılıyor  ..."
+            replyLastMessage "\tBoş Git Başlatılır  ..."
             gitInit
         fi
         deleteLastMessage
@@ -156,24 +156,24 @@ _checkUpstreamRepo() {
 }
 
 _checkUnoffPlugins() {
-    editLastMessage "Checking USERGE-X [Extra] Plugins ..."
+    editLastMessage "Checking DarkUserBot [Extra] Plugins ..."
     if test $LOAD_UNOFFICIAL_PLUGINS = true; then
-        editLastMessage "\tLoading USERGE-X [Extra] Plugins ..."
+        editLastMessage "\tLoading DarkUserBot [Extra] Plugins ..."
         replyLastMessage "\t\tClonning ..."
-        gitClone --depth=1 https://github.com/code-rgb/Userge-Plugins.git
-        editLastMessage "\t\tPIP sürümü yükseltiliyor..."
+        gitClone --depth=1 https://github.com/DarkWebAze/DarkUserBot-Plugins.git
+        editLastMessage "\t\tPIP versiya yükseltilir..."
         upgradePip
-        editLastMessage "\t\tGerkli bağımlılıklar yükleniyor ..."
-        installReq Userge-Plugins
-        editLastMessage "\t\tArda kalanlar temizleniyor ..."
-        rm -rf userge/plugins/unofficial/
-        mv Userge-Plugins/plugins/ userge/plugins/unofficial/
-        cp -r Userge-Plugins/resources/* resources/
-        rm -rf Userge-Plugins/
+        editLastMessage "\t\tLazımlı bağımlılıqlar yüklenir ..."
+        installReq DarkUserBot-Plugins
+        editLastMessage "\t\tArda qalanlar temizlenir ..."
+        rm -rf darkuserbot/plugins/unofficial/
+        mv DarkUserBot-Plugins/plugins/ darkuserbot/plugins/unofficial/
+        cp -r DarkUserBot-Plugins/resources/* resources/
+        rm -rf DarkUserBot-Plugins/
         deleteLastMessage
-        editLastMessage "\tUSERGE-X [Extra] Plugins Loaded Successfully !"
+        editLastMessage "\tDarkUserBot [Extra] Plugins Loaded Successfully !"
     else
-        editLastMessage "\tUSERGE-X [Extra] Plugins Disabled !"
+        editLastMessage "\tDarkUserBot [Extra] Plugins Disabled !"
     fi
     deleteLastMessage
 }
