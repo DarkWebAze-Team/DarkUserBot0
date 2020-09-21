@@ -61,38 +61,11 @@
   
   > Bundan sonra string session'u kopyalayın və Config Vars'a yapışdır(skip yazdığımız yerə)(settings -> reveal config vars). 
   
-  > Son olarak uygulamayı açın ve Logları(kayıtları) kontrol edin (settings -> view logs) :)
+  > Nəhayət tətbiqi açın və qeydləri yoxlayın (settings -> view logs)
 
 <h3><a href="https://telegra.ph/Other-Method-08-10">Diğer yöntemler</a></h3>
 
-
-<h2>Fork(Klon)'lanmış Repo için kullanım Kılavuzu</h2>
-<a href="https://telegra.ph/Upstream-Userge-Forked-Repo-Guide-07-04"><b>Fork(Klon)'lanmış Repo</b></a>
-<br>
-<br>
-
-<h3 align="center">Youtube Anlatımı<h3>
-<p align="center"><a href="https://youtu.be/M4T_BJvFqkc"><img src="https://i.imgur.com/VVgSk2m.png" width=250px></a>
-</p>
-
 ### Proje Geliştiricileri & Emeği geçenler
 
-* [Team Userge](https://github.com/UsergeTeam)
-* [Specially to these projects](https://github.com/UsergeTeam/Userge#inspiration-)
-* [@uaudIth](https://t.me/uaudIth)
-* [@K_E_N_W_A_Y](https://t.me/K_E_N_W_A_Y)
-* [@nawwasl](https://t.me/nawwasl)
-* [@TharukaN97](https://t.me/TharukaN97)
-* [@Supun97](https://t.me/Supun97)
-* [@gotstc](https://t.me/gotstc)
-* [@BINOD](https://t.me/binod)
+
 * 🔥 [Pyrogram Assistant](https://github.com/pyrogram/assistant)
-
-### Telif Hakkı & Lisans 
-
-* Copyright (C) 2020 by [UsergeTeam](https://github.com/UsergeTeam) 
-* [GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007](https://github.com/code-rgb/Userge/blob/master/LICENSE) Standartlarına göre lisanslanmıştır.
-
-
-
-<h3 align="center"> >>><a href="https://telegram.dog/x_xtests">  Support group  </a><<< </h3>
