@@ -1,5 +1,5 @@
 {
-    "name": "Dark userbot",
+    "name": "Dark User Bot",
     "description": "Kullanıcı Dostu Telegram userbot",
     "logo": "https://i.imgyukle.com/2020/09/21/xdQYFo.jpg",
     "keywords": [
@@ -8,9 +8,9 @@
         "pluggable",
         "userbot"
     ],
-    "repository": "https://github.com/DarkWebAze/darktest",
-    "website": "https://github.com/DarkWebAze/darktest",
-    "success_url": "https://github.com/DarkWebAze/darktest",
+    "repository": "https://github.com/DarkWebAze/DarkUserBot",
+    "website": "https://github.com/DarkWebAze/DarkUserBot",
+    "success_url": "https://github.com/DarkWebAze/DarkUserBot",
     "env": {
         "API_ID": {"description": "Bu değeri şuradan alın https://my.telegram.org"},
         "API_HASH": {"description": "Bu değeri şuradan alın https://my.telegram.org"},
