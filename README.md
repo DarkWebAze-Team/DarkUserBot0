@@ -33,7 +33,7 @@
    ```
 
 /**
-    ⚠️ USERGE-X userbo istifadəsinə görə; Telegram hesabınız blok ola bilər.Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
+    DarkUserBot istifadəsinə görə; Telegram hesabınız blok ola bilər.Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
 /**
 ```
 
@@ -51,15 +51,15 @@
 <a href = "https://heroku.com/deploy?templatehttps://github.com/DarkWebAze/darktest"><img src="https://telegra.ph/file/57c4edb389224c9cf9996.png" alt="Kullanım İçin Tıklayın" width="490px"></a></p>
 <br>
 
-<h3>HEROKU Method</h3>
+<h3>HEROKU Metodu</h3>
 
-<b>Önce Yukarıdaki BUTONA tıklayın</b> 
+<b>Əvvəlcə yuxarıdakı Düyməni vurun</b> 
 
-  > HU_STRING_SESSION değeriniz yoksa, dikkate almayın.
+  > HU_STRING_SESSION yoxdursa, skip yazın.
   
-  >Heroku ayarlamalarını tamamladıktan sonra önce uygulamayı kapatın (resources -> turn off) ve konsolda `bash genStr` komutunu çalıştırın (more -> run console). 
+  >Heroku parametrlərini tamamladıqdan sonra əvvəlcə tətbiqi bağlayın(resources -> turn off) və consolda `bash genStr` yazın  (more -> run console). 
   
-  > Bundan sonra string session'u kopyalayın ve Config Vars'a yapıştırın (settings -> reveal config vars). 
+  > Bundan sonra string session'u kopyalayın və Config Vars'a yapışdır(skip yazdığımız yerə)(settings -> reveal config vars). 
   
   > Son olarak uygulamayı açın ve Logları(kayıtları) kontrol edin (settings -> view logs) :)
 
