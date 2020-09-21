@@ -50,7 +50,7 @@
 ## Qurulum
 
 <p align="center">
-<a href = "https://heroku.com/deploy?templatehttps://github.com/DarkWebAze/darktest"><img src="https://telegra.ph/file/57c4edb389224c9cf9996.png" alt="Kullanım İçin Tıklayın" width="490px"></a></p>
+<a href = "https://heroku.com/deploy?templatehttps://github.com/DarkWebAze/darktest"><img src="https://telegra.ph/file/36a981223e3f92e833406.png" alt="Kullanım İçin Tıklayın" width="490px"></a></p>
 <br>
 
 <h3>HEROKU Metodu</h3>
