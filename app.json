@@ -1,16 +1,16 @@
 {
-    "name": "Userge-X",
+    "name": "Dark userbot",
     "description": "Kullanıcı Dostu Telegram userbot",
     "logo": "https://nolur.com",
     "keywords": [
-        "USERGE-X",
+        "Dark",
         "telegram",
         "pluggable",
         "userbot"
     ],
-    "repository": "https://github.com/code-rgb/USERGE-X",
-    "website": "https://github.com/code-rgb/USERGE-X",
-    "success_url": "https://github.com/code-rgb/USERGE-X",
+    "repository": "https://github.com/DarkWebAze/darktest",
+    "website": "https://github.com/DarkWebAze/darktest",
+    "success_url": "https://github.com/DarkWebAze/darktest",
     "env": {
         "API_ID": {"description": "Bu değeri şuradan alın https://my.telegram.org"},
         "API_HASH": {"description": "Bu değeri şuradan alın https://my.telegram.org"},
