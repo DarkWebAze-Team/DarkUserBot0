@@ -1,7 +1,7 @@
 
 
-<h1>USERGE-X</h1>
-<b>Kullanıcı dostu Telegram UserBot'u</b>
+<h1>DarkWebAze</h1>
+<b>Azərbaycanın daha çox funksiyanal botu</b>
 <br>
 <br>
 
@@ -16,15 +16,15 @@
 
 <br>
 
- **USERGE-X** _Python_ [Pyrogram](https://github.com/pyrogram/pyrogram) kullanılarak yazılmış Güçlü, _Kullanıcı Dostu_ Telegram UserBot (Kullanıcı) Botudur.
+ **DarkWebAze** _Python_ [Pyrogram](https://github.com/pyrogram/pyrogram) istifadə olunaraq yazılmışdır,telegram UserBot (istifadəçi) Botudur.
 <br>
 
 <br>
 
-## Nasıl kullanılır ??
+## Necə istifadə olunur ??
 
-* [Heroku Ayarları](https://telegra.ph/Heroku-Vars-for-USERGE-X-08-25)
-* Bakınız [Heroku Kullanum Kılavuzu](https://github.com/code-rgb/USERGE-X#how-to-deploy)
+* [Heroku parametrləri](https://telegra.ph/Heroku-Vars-for-USERGE-X-08-25)
+* [Heroku istifadə qaydası](https://github.com/code-rgb/USERGE-X#how-to-deploy)
 
 
 ## feragatname
