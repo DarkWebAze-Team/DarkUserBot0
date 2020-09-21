@@ -33,7 +33,9 @@
    ```
 
 /**
-    DarkUserBot istifadəsinə görə; Telegram hesabınız blok ola bilər.Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
+    DarkUserBot istifadəsinə görə; Telegram hesabınız blok ola bilər.
+    Bu açıq mənbəli bir layihədir, etdiyiniz hər şeydən siz (siz) cavabdehsiniz. 
+    DarkUserBot istifadə edərək, bu məsuliyyəti qəbul edirsiniz.
 /**
 ```
 
@@ -63,9 +65,6 @@
   
   > Nəhayət tətbiqi açın və qeydləri yoxlayın (settings -> view logs)
 
-<h3><a href="https://telegra.ph/Other-Method-08-10">Diğer yöntemler</a></h3>
-
-### Proje Geliştiricileri & Emeği geçenler
-
+### Lahiyədə əziyyəti olanlar 
 
 * 🔥 [Pyrogram Assistant](https://github.com/pyrogram/assistant)
