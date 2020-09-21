@@ -1,10 +1,10 @@
 # pylint: disable=invalid-name, missing-module-docstring
 #
-# Copyright (C) 2020 by UsergeTeam@Github, < https://github.com/UsergeTeam >.
+# Copyright (C) 2020 by DarkWebAze@Github, < https://github.com/DarkWebAze >.
 #
-# This file is part of < https://github.com/UsergeTeam/Userge > project,
+# This file is part of < https://github.com/DarkWebAze/DarkUserBot > project,
 # and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/uaudith/Userge/blob/master/LICENSE >
+# Please see < https://github.com/DarkWebAze/DarkUserBot/blob/master/LICENSE >
 #
 # All rights reserved.
 
@@ -20,13 +20,13 @@ if os.path.isfile("config.env"):
 
 async def genStrSession() -> None:  # pylint: disable=missing-function-docstring
     async with Client(
-            "Userge",
+            "Dark",
             api_id=int(os.environ.get("API_ID") or input("Enter Telegram APP ID: ")),
             api_hash=os.environ.get("API_HASH") or input("Enter Telegram API HASH: ")
-    ) as userge:
+    ) as dark:
         print("\nprocessing...")
-        await userge.send_message(
-            "me", f"#USERGE #HU_STRING_SESSION\n\n```{await userge.export_session_string()}```")
+        await dark.send_message(
+            "me", f"#DARK #HU_STRING_SESSION\n\n```{await dark.export_session_string()}```")
         print("Done !, session string has been sent to saved messages!")
 
 if __name__ == "__main__":
