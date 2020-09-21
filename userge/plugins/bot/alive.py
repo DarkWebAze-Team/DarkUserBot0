@@ -2,30 +2,30 @@
 
 from pyrogram import filters
 from pyrogram.types import CallbackQuery
-from userge import userge, Message, Config
-from userge.core.ext import RawClient
+from Dark import Dark, Message, Config
+from Dark.core.ext import RawClient
 import asyncio
 
 
-@userge.on_cmd("alive", about={
+@Dark.on_cmd("alive", about={
     'header': "Just For Fun"}, allow_channels=False)
 async def alive_inline(message: Message):
-    bot = await userge.bot.get_me()
-    x = await userge.get_inline_bot_results(bot.username, "alive")
+    bot = await Dark.bot.get_me()
+    x = await Dark.get_inline_bot_results(bot.username, "alive")
     
-    y = await userge.send_inline_bot_result(chat_id=message.chat.id,
+    y = await Dark.send_inline_bot_result(chat_id=message.chat.id,
                                         query_id=x.query_id,
                                         result_id=x.results[0].id)
     await message.delete()
     await asyncio.sleep(60)
-    await userge.delete_messages(message.chat.id, y.updates[0].id)
+    await Dark.delete_messages(message.chat.id, y.updates[0].id)
 
 
 if Config.BOT_TOKEN and Config.OWNER_ID:
     if Config.HU_STRING_SESSION:
-        ubot = userge.bot
+        ubot = Dark.bot
     else:
-        ubot = userge
+        ubot =Dark
 
 
     @ubot.on_callback_query(filters.regex(pattern=r"^settings_btn$"))
