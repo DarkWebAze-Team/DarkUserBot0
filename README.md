@@ -50,12 +50,12 @@
 ## Qurulum
 
 <p align="center">
-<a href = "https://heroku.com/deploy?template=https://github.com/UsergeTeam/Userge/tree/master/><img src="https://telegra.ph/file/36a981223e3f92e833406.png" alt="Kullanım İçin Tıklayın" width="490px"></a></p>
+<a href = "https://heroku.com/deploy?template=https://github.com/DarkWebAze/DarkUserBot0"><img src="https://telegra.ph/file/2b8b6a8cf96e512d25ad1.png" alt="Kullanım İçin Tıklayın" width="490px"></a></p>
 <br>
 
 <h3>HEROKU Metodu</h3>
 
-<b>Əvvəlcə yuxarıdakı Düyməni vurun</b> 
+<b>Əvvəlcə yuxarıdakı Düyməni vurun.</b> 
 
   > HU_STRING_SESSION yoxdursa, skip yazın.
   
