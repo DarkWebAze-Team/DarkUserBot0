@@ -5,15 +5,6 @@
 <br>
 <br>
 
-![Stars](https://img.shields.io/github/stars/code-rgb/USERGE-X)
-![Forks](https://img.shields.io/github/forks/code-rgb/USERGE-X)
-![Issues Open](https://img.shields.io/github/issues/code-rgb/USERGE-X)
-![Issues Closed](https://img.shields.io/github/issues-closed/code-rgb/USERGE-X)
-![PR Open](https://img.shields.io/github/issues-pr/code-rgb/USERGE-X)
-![PR Closed](https://img.shields.io/github/issues-pr-closed/code-rgb/USERGE-X)
-![Repo Size](https://img.shields.io/github/repo-size/code-rgb/USERGE-X)
-[![Sourcery](https://img.shields.io/badge/Sourcery-enabled-brightgreen)](https://sourcery.ai)
-
 <br>
 
  **DarkWebAze** _Python_ [Pyrogram](https://github.com/pyrogram/pyrogram) istifadə olunaraq yazılmışdır,telegram UserBot (istifadəçi) Botudur.
