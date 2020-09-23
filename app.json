@@ -1,23 +1,23 @@
 {
-    "name": "Userge-X",
-    "description": "Kullanıcı Dostu Telegram userbot",
-    "logo": "https://i.imgur.com/1xsOo9o.png",
+    "name": "Dark",
+    "description": "Dark userbot",
+    "logo": "https://i.imgyukle.com/2020/09/21/xdQYFo.jpg",
     "keywords": [
-        "USERGE-X",
+        "Dark",
         "telegram",
         "pluggable",
         "userbot"
     ],
-    "repository": "https://github.com/code-rgb/USERGE-X",
-    "website": "https://github.com/code-rgb/USERGE-X",
-    "success_url": "https://github.com/code-rgb/USERGE-X",
+    "repository": "https://github.com/DarkWebAze/DarkUserBot0",
+    "website": "https://github.com/DarkWebAze/DarkUserBot0",
+    "success_url": "https://github.com/DarkWebAze/DarkUserBot0",
     "env": {
-        "API_ID": {"description": "Bu değeri şuradan alın https://my.telegram.org"},
-        "API_HASH": {"description": "Bu değeri şuradan alın https://my.telegram.org"},
-        "DATABASE_URL": {"description": "Mongodb Veritabanı URL https://cloud.mongodb.com/"},
+        "API_ID": {"description": "Bu məlumatı burdan alın https://my.telegram.org"},
+        "API_HASH": {"description": "Bu məlumatı burdan alın https://my.telegram.org"},
+        "DATABASE_URL": {"description": "Mongodb Veri deposu alın link: https://cloud.mongodb.com/"},
         "LOG_CHANNEL_ID": {"description": "Telegram Log Kanal ID"},
         "HU_STRING_SESSION": {
-            "description": "'https://GenUserGeString.usergeuserbot.repl.run' Adresinden `bash genStr` komutunu çalıştırın",
+            "description": "Buranı sonra '`bash genStr`edərək dolduracayiq. skip yazın",
             "required": false}
     },
     "addons": [],
